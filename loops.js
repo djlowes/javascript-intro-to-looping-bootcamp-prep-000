@@ -11,16 +11,16 @@ return array
 
 function whileLoop(n) {
   while (n > 0){
-    console.log(n)
-    n--
+    console.log(--n)
   }
   return 'done';
 }
 
 function doWhileLoop(array) {
+ var maybeTrue = Math.random() >= 0.5;
   do {
       array.pop()
      }
-  while (array.length > 0 && maybeTrue())
+  while (array.length > 0 && maybeTrue == true)
   return array
 }
